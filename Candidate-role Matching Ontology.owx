@@ -1,0 +1,2027 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2026/3/Final"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2026/3/Final">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2026/3/Final/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AIJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#API"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Backend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackendDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Candidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudArchitect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudDevOpsEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerVision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerVisionEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataEngineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataScientist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataVisualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabaseAdministrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabaseEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabaseJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevOps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopmentJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frontend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrontendDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullStackDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Junior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LLMEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachineLearningEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoSQL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgrammingLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QAEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QAJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoleLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SQL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityEngineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityJobQualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalSkill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestingQA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VersionControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Design/Implement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LLM/NLP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ML/DL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor/Detect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredSoftSkillOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredTechnicalSkillOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoftSkillOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTechnicalSkillOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#qualifiedfor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adaptability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airflow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CSharp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cassandra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConflictResolution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Couchbase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriticalThinking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrowdStrike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cypress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Django"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Docker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flutter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GCP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Git"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Github"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gitlab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grafana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GraphQL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HTML_CSS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hadoop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HuggingFace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JavaScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jenkins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jetpack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jmeter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Junit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kafka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kotlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kubernetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LangChain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leadership"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightGMB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Looker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManualTesting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matplotlib"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MongoDB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MySQL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neo4j"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nessus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NodeJS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numpy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Okta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenCV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenSSL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oracle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pandas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PostgreSQL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Postman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerBI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProblemSolving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PyTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PyTorch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RESTAPI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#React"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReactNative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ross"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOAPAPI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ScikitLearn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Seaborn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Selenium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Snowflake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Splunk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SwiftUI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tableau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TensorFlow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terraform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeManagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TypeScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XGBoost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YOLO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zeek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dbt"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AIJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#ComputerVisionEngineer"/>
+                <Class IRI="#LLMEngineer"/>
+                <Class IRI="#MachineLearningEngineer"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BackendDeveloper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#API"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Backend"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Database"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CloudArchitect"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#CloudPlatform"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SecurityTool"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#VersionControl"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CloudDevOpsEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#CloudPlatform"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DevOps"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Docker"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Kubernetes"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Terraform"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CloudEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#CloudPlatform"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Database"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CloudJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#CloudArchitect"/>
+                <Class IRI="#CloudDevOpsEngineer"/>
+                <Class IRI="#CloudEngineer"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ComputerVisionEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ComputerVision"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ML/DL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Pandas"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#ScikitLearn"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataAnalyst"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SQL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#dbt"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataEngineering"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SQL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Hadoop"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#DataAnalyst"/>
+                <Class IRI="#DataEngineer"/>
+                <Class IRI="#DataScientist"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DataScientist"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SQL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ML/DL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DatabaseAdministrator"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Database"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SQL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DatabaseEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#SQL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DatabaseJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#DatabaseAdministrator"/>
+                <Class IRI="#DatabaseEngineer"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DevelopmentJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#BackendDeveloper"/>
+                <Class IRI="#FrontendDeveloper"/>
+                <Class IRI="#FullStackDeveloper"/>
+                <Class IRI="#MobileDeveloper"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FrontendDeveloper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#API"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Frontend"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FullStackDeveloper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#API"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Database"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#JavaScript"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Backend"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Frontend"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Junior"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#requiresYearsOfExperience"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LLMEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#API"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#LLM/NLP"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ML/DL"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Pandas"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MachineLearningEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#DataVisualization"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Numpy"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Pandas"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <NamedIndividual IRI="#Python"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ML/DL"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mid"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#requiresYearsOfExperience"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MobileDeveloper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#API"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#MobileDevelopment"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QAEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#TestingQA"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QAJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#QAEngineer"/>
+            <Class IRI="#Role"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecurityAnalyst"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Monitor/Detect"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecurityEngineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#ProgrammingLanguage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#requiresTechnicalSkill"/>
+                <Class IRI="#Design/Implement"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <Class IRI="#SoftSkill"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SecurityJobQualified"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectUnionOf>
+                <Class IRI="#SecurityAnalyst"/>
+                <Class IRI="#SecurityEngineer"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Senior"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Role"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#requiresSoftSkill"/>
+                <NamedIndividual IRI="#Leadership"/>
+            </ObjectHasValue>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#requiresYearsOfExperience"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AI"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AIJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#API"/>
+        <Class IRI="#WebDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Backend"/>
+        <Class IRI="#WebDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackendDeveloper"/>
+        <Class IRI="#DevelopmentJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudArchitect"/>
+        <Class IRI="#CloudJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudDevOpsEngineer"/>
+        <Class IRI="#CloudJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudEngineer"/>
+        <Class IRI="#CloudJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudPlatform"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <Class IRI="#AI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVisionEngineer"/>
+        <Class IRI="#AIJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataAnalyst"/>
+        <Class IRI="#DataJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataEngineer"/>
+        <Class IRI="#DataJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataEngineering"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataScientist"/>
+        <Class IRI="#DataJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataVisualization"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Database"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DatabaseAdministrator"/>
+        <Class IRI="#DatabaseJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DatabaseEngineer"/>
+        <Class IRI="#DatabaseJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DatabaseJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevelopmentJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frontend"/>
+        <Class IRI="#WebDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrontendDeveloper"/>
+        <Class IRI="#DevelopmentJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullStackDeveloper"/>
+        <Class IRI="#DevelopmentJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junior"/>
+        <Class IRI="#RoleLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LLMEngineer"/>
+        <Class IRI="#AIJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachineLearningEngineer"/>
+        <Class IRI="#AIJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mid"/>
+        <Class IRI="#RoleLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileDeveloper"/>
+        <Class IRI="#DevelopmentJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileDevelopment"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoSQL"/>
+        <Class IRI="#Database"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProgrammingLanguage"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QAEngineer"/>
+        <Class IRI="#QAJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QAJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Employer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoleLevel"/>
+        <Class IRI="#Employer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SQL"/>
+        <Class IRI="#Database"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityAnalyst"/>
+        <Class IRI="#SecurityJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityEngineer"/>
+        <Class IRI="#SecurityJobQualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityJobQualified"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityTool"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior"/>
+        <Class IRI="#RoleLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftSkill"/>
+        <Class IRI="#Skill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnicalSkill"/>
+        <Class IRI="#Skill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestingQA"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VersionControl"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebDevelopment"/>
+        <Class IRI="#TechnicalSkill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Design/Implement"/>
+        <Class IRI="#SecurityTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LLM/NLP"/>
+        <Class IRI="#AI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ML/DL"/>
+        <Class IRI="#AI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor/Detect"/>
+        <Class IRI="#SecurityTool"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AI"/>
+        <Class IRI="#CloudPlatform"/>
+        <Class IRI="#DataEngineering"/>
+        <Class IRI="#DataVisualization"/>
+        <Class IRI="#Database"/>
+        <Class IRI="#DevOps"/>
+        <Class IRI="#MobileDevelopment"/>
+        <Class IRI="#ProgrammingLanguage"/>
+        <Class IRI="#SecurityTool"/>
+        <Class IRI="#TestingQA"/>
+        <Class IRI="#VersionControl"/>
+        <Class IRI="#WebDevelopment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#API"/>
+        <Class IRI="#Backend"/>
+        <Class IRI="#Frontend"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Candidate"/>
+        <Class IRI="#Skill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ComputerVision"/>
+        <Class IRI="#LLM/NLP"/>
+        <Class IRI="#ML/DL"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Employee"/>
+        <Class IRI="#Employer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NoSQL"/>
+        <Class IRI="#SQL"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SecurityAnalyst"/>
+        <Class IRI="#SecurityEngineer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SoftSkill"/>
+        <Class IRI="#TechnicalSkill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Design/Implement"/>
+        <Class IRI="#Monitor/Detect"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CloudPlatform"/>
+        <NamedIndividual IRI="#AWS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#Adaptability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#Airflow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Frontend"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudPlatform"/>
+        <NamedIndividual IRI="#Azure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#CSharp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSQL"/>
+        <NamedIndividual IRI="#Cassandra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Candidate"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#Communication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#ConflictResolution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSQL"/>
+        <NamedIndividual IRI="#Couchbase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#CriticalThinking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor/Detect"/>
+        <NamedIndividual IRI="#CrowdStrike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#Cypress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Backend"/>
+        <NamedIndividual IRI="#Django"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DevOps"/>
+        <NamedIndividual IRI="#Docker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Backend"/>
+        <NamedIndividual IRI="#Flask"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#Flink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MobileDevelopment"/>
+        <NamedIndividual IRI="#Flutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrontendDeveloper"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudPlatform"/>
+        <NamedIndividual IRI="#GCP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VersionControl"/>
+        <NamedIndividual IRI="#Git"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VersionControl"/>
+        <NamedIndividual IRI="#Github"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VersionControl"/>
+        <NamedIndividual IRI="#Gitlab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DevOps"/>
+        <NamedIndividual IRI="#Grafana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#API"/>
+        <NamedIndividual IRI="#GraphQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Frontend"/>
+        <NamedIndividual IRI="#HTML_CSS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#Hadoop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LLM/NLP"/>
+        <NamedIndividual IRI="#HuggingFace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#Java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DevOps"/>
+        <NamedIndividual IRI="#Jenkins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MobileDevelopment"/>
+        <NamedIndividual IRI="#Jetpack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#Jmeter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataScientist"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#Junit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#Kafka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MobileDevelopment"/>
+        <NamedIndividual IRI="#Kotlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DevOps"/>
+        <NamedIndividual IRI="#Kubernetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LLM/NLP"/>
+        <NamedIndividual IRI="#LangChain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#Leadership"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#LightGMB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataVisualization"/>
+        <NamedIndividual IRI="#Looker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#ManualTesting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataVisualization"/>
+        <NamedIndividual IRI="#Matplotlib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSQL"/>
+        <NamedIndividual IRI="#MongoDB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SQL"/>
+        <NamedIndividual IRI="#MySQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoSQL"/>
+        <NamedIndividual IRI="#Neo4j"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Design/Implement"/>
+        <NamedIndividual IRI="#Nessus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Backend"/>
+        <NamedIndividual IRI="#NodeJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#Numpy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor/Detect"/>
+        <NamedIndividual IRI="#Okta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComputerVision"/>
+        <NamedIndividual IRI="#OpenCV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor/Detect"/>
+        <NamedIndividual IRI="#OpenSSL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudPlatform"/>
+        <NamedIndividual IRI="#Oracle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#Pandas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SQL"/>
+        <NamedIndividual IRI="#PostgreSQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#Postman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataVisualization"/>
+        <NamedIndividual IRI="#PowerBI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#ProblemSolving"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#PyTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#PyTorch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#Python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#API"/>
+        <NamedIndividual IRI="#RESTAPI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Frontend"/>
+        <NamedIndividual IRI="#React"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MobileDevelopment"/>
+        <NamedIndividual IRI="#ReactNative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#API"/>
+        <NamedIndividual IRI="#SOAPAPI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#Scala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#ScikitLearn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataVisualization"/>
+        <NamedIndividual IRI="#Seaborn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestingQA"/>
+        <NamedIndividual IRI="#Selenium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullStackDeveloper"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#QAEngineer"/>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SQL"/>
+        <NamedIndividual IRI="#Snowflake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#Spark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Design/Implement"/>
+        <NamedIndividual IRI="#Splunk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MobileDevelopment"/>
+        <NamedIndividual IRI="#SwiftUI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataVisualization"/>
+        <NamedIndividual IRI="#Tableau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#TensorFlow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DevOps"/>
+        <NamedIndividual IRI="#Terraform"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftSkill"/>
+        <NamedIndividual IRI="#TimeManagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProgrammingLanguage"/>
+        <NamedIndividual IRI="#TypeScript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Frontend"/>
+        <NamedIndividual IRI="#Vue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#XGBoost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ML/DL"/>
+        <NamedIndividual IRI="#YOLO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Design/Implement"/>
+        <NamedIndividual IRI="#Zeek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataEngineering"/>
+        <NamedIndividual IRI="#dbt"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#Leadership"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#Flask"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#HTML_CSS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <NamedIndividual IRI="#Snowflake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+        <NamedIndividual IRI="#Leadership"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+        <NamedIndividual IRI="#HTML_CSS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+        <NamedIndividual IRI="#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Adaptability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Communication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#TimeManagement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#HuggingFace"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Matplotlib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#MySQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Numpy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Pandas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#PowerBI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#PyTorch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Jill"/>
+        <NamedIndividual IRI="#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#Communication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#ProblemSolving"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#TimeManagement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#MySQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#PyTorch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <NamedIndividual IRI="#Tableau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Ross"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Ross"/>
+        <NamedIndividual IRI="#PyTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <NamedIndividual IRI="#Ross"/>
+        <NamedIndividual IRI="#Selenium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#Leadership"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#Cassandra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#Flask"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#HTML_CSS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <NamedIndividual IRI="#RESTAPI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+        <NamedIndividual IRI="#PyTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+        <NamedIndividual IRI="#Selenium"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+        <NamedIndividual IRI="#Cassandra_Smith"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <NamedIndividual IRI="#FrontendDeveloper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+        <NamedIndividual IRI="#Jill"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <NamedIndividual IRI="#Junior_Data_Scientist"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+        <NamedIndividual IRI="#Ross"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <NamedIndividual IRI="#Senior_Full_Stack_Developer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <NamedIndividual IRI="#Senior_QA_Engineer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <ObjectProperty IRI="#isSoftSkillOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <ObjectProperty IRI="#isTechnicalSkillOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequiredSoftSkillOf"/>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequiredTechnicalSkillOf"/>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#qualifiedfor"/>
+        <Class IRI="#Candidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSoftSkill"/>
+        <Class IRI="#SoftSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTechnicalSkill"/>
+        <Class IRI="#TechnicalSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#qualifiedfor"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresSoftSkill"/>
+        <Class IRI="#SoftSkill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresTechnicalSkill"/>
+        <Class IRI="#TechnicalSkill"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasSoftSkill"/>
+            <ObjectProperty IRI="#isRequiredSoftSkillOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#qualifiedfor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasTechnicalSkill"/>
+            <ObjectProperty IRI="#isRequiredTechnicalSkillOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#qualifiedfor"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+        <Class IRI="#Candidate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <Class IRI="#Role"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearsOfExperience"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requiresYearsOfExperience"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
