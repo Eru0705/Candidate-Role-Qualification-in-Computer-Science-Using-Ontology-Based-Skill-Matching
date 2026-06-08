@@ -1,0 +1,2099 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2026/3/Final/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2026/3/Final/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Final="http://www.semanticweb.org/user/ontologies/2026/3/Final#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#hasSoftSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasSoftSkill">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#isSoftSkillOf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#hasTechnicalSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasTechnicalSkill">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#isTechnicalSkillOf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredSoftSkillOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredSoftSkillOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredTechnicalSkillOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredTechnicalSkillOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#isSoftSkillOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isSoftSkillOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#isTechnicalSkillOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isTechnicalSkillOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#qualifiedfor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#qualifiedfor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasSoftSkill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredSoftSkillOf"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasTechnicalSkill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredTechnicalSkillOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#hasYearsOfExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasYearsOfExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresYearsOfExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresYearsOfExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#AI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#AI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#AIJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#AIJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVisionEngineer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLMEngineer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MachineLearningEngineer"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#BackendDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#BackendDeveloper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employee"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudArchitect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudArchitect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudDevOpsEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudDevOpsEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Docker"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Kubernetes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Terraform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudArchitect"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudDevOpsEngineer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudEngineer"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVisionEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVisionEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVision"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ScikitLearn"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AIJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataAnalyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataAnalyst">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#dbt"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Hadoop"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataAnalyst"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataScientist"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataScientist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataScientist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseAdministrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseAdministrator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseAdministrator"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DatabaseEngineer"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#BackendDeveloper"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#FrontendDeveloper"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#FullStackDeveloper"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDeveloper"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employee">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Employer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#FrontendDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#FrontendDeveloper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#FullStackDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#FullStackDeveloper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Junior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Junior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresYearsOfExperience"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#RoleLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#LLMEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLMEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AIJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#MachineLearningEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MachineLearningEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Numpy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AIJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Mid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Mid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresYearsOfExperience"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#RoleLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDeveloper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevelopmentJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#QAEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#QAJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAEngineer"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#RoleLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#RoleLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityAnalyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityAnalyst">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityJobQualified"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityEngineer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityEngineer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresTechnicalSkill"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityJobQualified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityJobQualified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityJobQualified">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityAnalyst"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityEngineer"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresSoftSkill"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#requiresYearsOfExperience"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#RoleLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Skill"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TechnicalSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Adaptability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Adaptability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Airflow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Airflow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Angular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Angular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CSharp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CSharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra_Smith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Java"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Snowflake"/>
+        <Final:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</Final:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ConflictResolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ConflictResolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Couchbase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Couchbase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CriticalThinking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CriticalThinking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CrowdStrike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CrowdStrike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Cypress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cypress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Django -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Django">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Docker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Docker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Flink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Flutter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flutter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#GCP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#GCP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Git -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Git">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Github -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Github">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Gitlab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Gitlab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Grafana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Grafana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#GraphQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#GraphQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Hadoop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Hadoop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#HuggingFace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#HuggingFace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Jenkins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Jenkins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Jetpack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Jetpack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Jill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Jill">
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Adaptability"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Communication"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TimeManagement"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HuggingFace"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Matplotlib"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MySQL"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Numpy"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PowerBI"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTorch"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+        <Final:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</Final:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Jmeter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Jmeter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Junior_Data_Scientist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Junior_Data_Scientist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataScientist"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Communication"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProblemSolving"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TimeManagement"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MySQL"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTorch"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Tableau"/>
+        <Final:requiresYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</Final:requiresYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Junit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Junit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Kafka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Kafka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Kotlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Kotlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Kubernetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Kubernetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#LangChain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LangChain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#LightGMB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LightGMB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Looker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Looker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ManualTesting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ManualTesting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Matplotlib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Matplotlib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Mid_Frontend_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Mid_Frontend_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#FrontendDeveloper"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Java"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript"/>
+        <Final:requiresYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</Final:requiresYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#MongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MongoDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#MySQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MySQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Neo4j -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Neo4j">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Nessus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Nessus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#NodeJS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#NodeJS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Numpy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Numpy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Okta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Okta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#OpenCV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#OpenCV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#OpenSSL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#OpenSSL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Monitor/Detect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Oracle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Oracle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Pandas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#PostgreSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Postman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Postman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#PowerBI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#PowerBI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ProblemSolving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProblemSolving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTorch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTorch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Python">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#R -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#R">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#RESTAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#RESTAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#React -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#React">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ReactNative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ReactNative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Ross -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Ross">
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#C"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest"/>
+        <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium"/>
+        <Final:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</Final:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SOAPAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SOAPAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Scala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Scala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#ScikitLearn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ScikitLearn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Seaborn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Seaborn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_Full_Stack_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_Full_Stack_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#FullStackDeveloper"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Java"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#JavaScript"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#RESTAPI"/>
+        <Final:requiresYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</Final:requiresYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_QA_Engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_QA_Engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAEngineer"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#C"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest"/>
+        <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium"/>
+        <Final:requiresYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</Final:requiresYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Snowflake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Snowflake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Spark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Spark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Splunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Splunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#SwiftUI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SwiftUI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Tableau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Tableau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#TensorFlow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TensorFlow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Terraform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Terraform">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#TimeManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TimeManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#TypeScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TypeScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Vue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Vue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#XGBoost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#XGBoost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#YOLO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#YOLO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Zeek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Zeek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Design/Implement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#dbt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#dbt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#AI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CloudPlatform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataEngineering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DataVisualization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DevOps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#MobileDevelopment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProgrammingLanguage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#SecurityTool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#VersionControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#WebDevelopment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#API"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Backend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Frontend"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ComputerVision"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#LLM/NLP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#ML/DL"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
