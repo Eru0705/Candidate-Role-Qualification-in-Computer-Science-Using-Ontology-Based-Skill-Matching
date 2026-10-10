@@ -71,8 +71,6 @@
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#qualifiedfor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#qualifiedfor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Role"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#hasSoftSkill"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#isRequiredSoftSkillOf"/>
@@ -1308,6 +1306,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#AttentionToDetail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#AttentionToDetail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Azure -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Azure">
@@ -1344,6 +1350,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra_Smith">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DecisionMaking"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#InterpersonalSkill"/>
         <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
         <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask"/>
         <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS"/>
@@ -1379,6 +1387,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Creativity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Creativity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#CriticalThinking -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#CriticalThinking">
@@ -1399,6 +1415,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cypress">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TestingQA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#DecisionMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#DecisionMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
     </owl:NamedIndividual>
     
 
@@ -1515,6 +1539,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#InterpersonalSkill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#InterpersonalSkill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#SoftSkill"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Java -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Java">
@@ -1550,6 +1582,7 @@
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Jill -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Jill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
         <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Adaptability"/>
         <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Communication"/>
         <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#TimeManagement"/>
@@ -1862,6 +1895,10 @@
     <!-- http://www.semanticweb.org/user/ontologies/2026/3/Final#Ross -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Ross">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Candidate"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AttentionToDetail"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#DecisionMaking"/>
+        <Final:hasSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#InterpersonalSkill"/>
         <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#C"/>
         <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest"/>
         <Final:hasTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium"/>
@@ -1915,6 +1952,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_Full_Stack_Developer">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#FullStackDeveloper"/>
         <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Leadership"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#ProblemSolving"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Cassandra"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Flask"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#HTML_CSS"/>
@@ -1930,6 +1968,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2026/3/Final#Senior_QA_Engineer">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#QAEngineer"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#AttentionToDetail"/>
+        <Final:requiresSoftSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Creativity"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#C"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#PyTest"/>
         <Final:requiresTechnicalSkill rdf:resource="http://www.semanticweb.org/user/ontologies/2026/3/Final#Selenium"/>
