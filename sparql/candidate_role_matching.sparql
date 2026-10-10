@@ -1,0 +1,32 @@
+# Candidate-role matching
+# Does Jill meet every technical-skill requirement of the DataScientist role?
+# Checks both category requirements (someValuesFrom) and specific skills (hasValue).
+# Expected result: true
+
+PREFIX : <http://www.semanticweb.org/user/ontologies/2026/3/Final#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  FILTER NOT EXISTS {
+    :DataScientist owl:equivalentClass ?eq .
+    ?eq owl:intersectionOf ?list .
+    ?list rdf:rest*/rdf:first ?r .
+    ?r rdf:type owl:Restriction ;
+       owl:onProperty :requiresTechnicalSkill ;
+       owl:someValuesFrom ?category .
+    FILTER NOT EXISTS {
+      :Jill :hasTechnicalSkill ?skill .
+      ?skill rdf:type ?category .
+    }
+  }
+  FILTER NOT EXISTS {
+    :DataScientist owl:equivalentClass ?eq2 .
+    ?eq2 owl:intersectionOf ?list2 .
+    ?list2 rdf:rest*/rdf:first ?r2 .
+    ?r2 rdf:type owl:Restriction ;
+        owl:onProperty :requiresTechnicalSkill ;
+        owl:hasValue ?specificSkill .
+    FILTER NOT EXISTS { :Jill :hasTechnicalSkill ?specificSkill . }
+  }
+}

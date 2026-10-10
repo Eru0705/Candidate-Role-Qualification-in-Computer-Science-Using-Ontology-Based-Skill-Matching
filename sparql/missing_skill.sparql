@@ -1,0 +1,22 @@
+# Missing-skill detection
+# Which technical skill categories does Jill lack for the LLMEngineer role?
+# Expected result: API
+
+PREFIX : <http://www.semanticweb.org/user/ontologies/2026/3/Final#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?missingSkillCategory
+WHERE {
+  :LLMEngineer owl:equivalentClass ?intersection .
+  ?intersection owl:intersectionOf ?list .
+  ?list rdf:rest*/rdf:first ?restriction .
+  ?restriction owl:onProperty :requiresTechnicalSkill .
+  ?restriction owl:someValuesFrom ?missingSkillCategory .
+
+  FILTER NOT EXISTS {
+    :Jill :hasTechnicalSkill ?skill .
+    ?skill rdf:type ?missingSkillCategory .
+  }
+}
