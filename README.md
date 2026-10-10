@@ -54,21 +54,30 @@ This ontology provides a structured, logical framework for matching candidates t
 |------|--------|-------------|
 | Candidate-role Matching Ontology.owx | OWL/XML | Main ontology (open in Protégé) |
 | FINAL.rdf | RDF/XML | Same ontology in RDF/XML |
+| sparql/skill_inference.sparql | SPARQL | Skill inference query |
 | sparql/missing_skill.sparql | SPARQL | Missing-skill detection query |
 | sparql/candidate_role_matching.sparql | SPARQL | Candidate-role matching query |
+| images/ | PNG | SPARQL query result screenshots |
 
 ## SPARQL Queries
 
-Run these in Protégé (**Window → Tabs → SPARQL Query**) with the ontology loaded. Candidate **Jill** is used as the case study.
+Run these in Protégé (**Window → Tabs → SPARQL Query**) with the ontology loaded. Candidate **Jill** is the main case study.
 
-### 1. Missing-skill detection
+### 1. Skill inference
+Checks whether candidate **Aarya** has a technical skill that is a **ProgrammingLanguage**, using the skill hierarchy. Query: [`sparql/skill_inference.sparql`](sparql/skill_inference.sparql)
+
+**Result:** `True`
+
+![Skill inference query](images/skill_inference_query.png)
+
+### 2. Missing-skill detection
 Finds which technical skill categories Jill lacks for the **LLMEngineer** role. Query: [`sparql/missing_skill.sparql`](sparql/missing_skill.sparql)
 
 **Result:** `API`, so Jill needs an API skill to qualify as an LLM Engineer.
 
 ![Missing skill query](images/missing_skill_query.png)
 
-### 2. Candidate-role matching
+### 3. Candidate-role matching
 Checks whether Jill meets every technical-skill requirement of **DataScientist**, covering both skill categories (`someValuesFrom`) and specific skills (`hasValue`). Query: [`sparql/candidate_role_matching.sparql`](sparql/candidate_role_matching.sparql)
 
 **Result:** `True`, so Jill is qualified for DataScientist on technical skills.

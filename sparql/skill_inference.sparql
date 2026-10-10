@@ -1,0 +1,13 @@
+# Skill inference
+# Does Aarya have a technical skill that is a ProgrammingLanguage?
+# Expected result: true
+
+PREFIX : <http://www.semanticweb.org/user/ontologies/2026/3/Final#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+ASK {
+  :Aarya :hasTechnicalSkill ?skill .
+  ?skill rdf:type :ProgrammingLanguage .
+}
